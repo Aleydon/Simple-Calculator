@@ -1,5 +1,5 @@
 import React from 'react';
-
+import calcular from './aritmetic';
 
 
 
@@ -29,7 +29,7 @@ function App() {
 				</div>
 
 				<div className="col-md-4">
-					<input id="numberTwo" type="text" class="form-control" placeholder="Digite um número"/>
+					<input id="numberTwo" type="text" className="form-control" placeholder="Digite um número"/>
 				</div>
 			</div>
 
@@ -41,14 +41,14 @@ function App() {
 				<div className="col-md-4"></div>
 
 				<div className="col-md-4">
-					<button type="button" class="btn btn-lg btn-primary pull-right" onclick="calcular()">Calcular</button>
+					<button type="button" className="btn btn-lg btn-primary pull-right" onClick={calcular}>Calcular</button>
 				</div>
 			</div>
 
 			<hr />
 
 			<div className="well">
-				Resultado: <input id="result" type="text" class="form-control" readonly/>
+				Resultado: <input id="result" type="text" className="form-control" readOnly/>
 			</div>
 		</div>
     </>
